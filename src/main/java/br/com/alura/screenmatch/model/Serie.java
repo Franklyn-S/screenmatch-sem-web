@@ -12,12 +12,11 @@ public class Serie {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Column(unique = true)
-    private  String titulo;
+    private String titulo;
     private Integer totalTemporadas;
     private Double avaliacao;
     @Enumerated(EnumType.STRING)
-   private EnumCategoria genero;
+    private EnumCategoria genero;
     private String atores;
     private String poster;
     private String sinopse;
